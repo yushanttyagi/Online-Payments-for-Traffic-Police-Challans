@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".sendmail">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ovalshape"
+
+        android:paddingLeft="3dp"
+        android:paddingTop="7dp"
+        android:text="    To:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_to"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ovalshape"
+
+        android:paddingLeft="7dp"
+        android:paddingTop="7dp"
+        android:text="Subject:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <EditText
+        android:id="@+id/edit_text_subject"
+        android:layout_width="244dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ovalshape"
+        android:backgroundTint="#FFEBEE"
+        android:ems="10"
+        android:inputType="textEmailSubject"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="117dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ovalshape"
+
+        android:drawableBottom="@drawable/ovalshape"
+        android:paddingLeft="7dp"
+        android:paddingTop="7dp"
+        android:text="Message:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.04"
+        android:layout_marginLeft="8dp" />
+
+    <EditText
+        android:id="@+id/edit_text_message"
+        android:layout_width="336dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ovalshape"
+        android:backgroundTint="#FFEBEE"
+        android:ems="10"
+        android:gravity="bottom|start|right|top"
+        android:lines="10"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button_send"
+
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
+
+        android:background="@drawable/ovalshape"
+        android:text="SEND MAIL"
+        app:layout_constraintEnd_toStartOf="@+id/button13"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_message" />
+
+    <EditText
+        android:id="@+id/edit_text_to"
+
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ovalshape"
+        android:backgroundTint="#FFEBEE"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="107dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ovalshape"
+
+        android:onClick="gotosms"
+        android:text="SEND SMS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_message"
+        app:layout_constraintVertical_bias="0.118" />
+
+</android.support.constraint.ConstraintLayout>
